@@ -1,0 +1,245 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+}
+#navbar {
+  padding: 0px 1%;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #bf3039;
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  border-bottom: 2.5px solid black;
+}
+#navbar a {
+  padding: 1rem;
+  text-decoration: none;
+  color: white;
+  font: 1.4rem Arial;
+}
+#navbar a:hover {
+  background-color: #304070;
+}
+#wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#welcome-section {
+  background-color: #303030;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#welcome-section h1 {
+  font: 2rem Georgia;
+  color: white;
+}
+#welcome-section p {
+  font: italic 1rem Arial;
+  padding: 0.4rem;
+  color: #bf3333;
+}
+#myfoto {
+  width: 300px;
+  height: 200px;
+  border: 2px solid red;
+}
+#myfoto img {
+  width: 100%;
+  height: 100%;
+}
+#story {
+  width: 80%;
+  max-width: 700px;
+  color: rgb(250, 193, 86);
+  text-align: center;
+  font-size: 1.2rem;
+}
+#projects {
+  width: 100%;
+  background-color: #5b7fbd;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+#projects h2 {
+  margin-top: 5%;
+  font: 3rem Arial;
+  color: white;
+  padding: 4px 10px;
+}
+#projects h2 span {
+  border-bottom: 2px solid white;
+  padding: 2px 0.8rem;
+}
+
+.project-tile {
+  width: 95%;
+  max-width: 1300px;
+  margin: 3rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.project {
+  width: 32%;
+  margin-bottom: 1rem;
+  transition: 2s ease;
+}
+.project:hover {
+  transform: scale(0.9, 0.9);
+}
+
+.project-case {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  text-decoration-line: none;
+  transition: 3s ease;
+}
+.project-case:hover span {
+  color: orange;
+}
+
+.project-case-img {
+  width: 100%;
+  height: 83%;
+  object-fit: cover;
+}
+.project-case-title {
+  font: 1.5rem calibri;
+  text-decoration: none;
+  background-color: #303030;
+  color: white;
+  height: 17%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project-case-title span {
+  transition: 1s ease;
+  font: bold 1rem Arial;
+  padding: 2%;
+  color: #303030;
+}
+#button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+  font: 1rem Arial;
+}
+#button > a {
+  padding: 1rem 2rem;
+  background-color: #303030;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  transition: 0.5s ease;
+}
+#button > a:hover {
+  background-color: #bf3333;
+}
+#contact {
+  background-color: #303030;
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-bottom: 3px solid #bf3039;
+}
+#contact h2 {
+  font: 4em Georgia;
+  color: #eee;
+  text-align: center;
+}
+#contact > p {
+  font: italic 1.2rem Arial;
+  padding: 1%;
+  color: #eee;
+}
+#contact-menu {
+  margin-top: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 95%;
+  max-width: 1300px;
+  justify-content: center;
+}
+.contact-link {
+  width: 100%;
+  padding: 0.5%;
+  font-size: 2rem;
+}
+.contact-link i {
+  color: #717dd7;
+}
+.contact-link span {
+  margin-left: 4%;
+  color: #aaa;
+}
+.contact-menu-case {
+  transition: 0.5s ease;
+  text-align: center;
+  margin: 0 0.8%;
+}
+.contact-menu-case:hover {
+  transform: translateY(15%);
+}
+footer {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  background-color: #303030;
+  color: white;
+  font: 1.2rem Georgia;
+  justify-content: center;
+  align-items: center;
+}
+#footer-text {
+  width: 85%;
+  text-align: center;
+}
+@media (max-width: 1100px) {
+  #welcome-section {
+    height: 60vh;
+  }
+  .project {
+    width: 48%;
+  }
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 700px) {
+  .project {
+    width: 97%;
+  }
+  .project-case {
+    margin: 0.4rem auto;
+    width: 90%;
+    height: 90%;
+  }
+  #contact {
+    height: 40vh;
+  }
+
+  html {
+    font-size: 10px;
+  }
+}
